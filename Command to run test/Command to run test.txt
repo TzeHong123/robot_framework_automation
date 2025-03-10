@@ -1,18 +1,20 @@
-TC1 - Run Search test
-robot -d results Tests/search_test.robot
+TC1 - Register user /
+robot -d results Tests/register_user_test.robot;  py upload_test_results.py
 
+TC2 - Login user /
+robot -d results Tests/login_user_test.robot;  py upload_test_results.py
 
-TC2 - Add item to cart
-robot -d results Tests/add_to_cart_test.robot
+TC3 - Run Search test /
+robot -d results Tests/search_test.robot; py upload_test_results.py
 
-TC2 - Remove item from cart
-robot -d results Tests/remove_from_cart_test.robot
+TC4 - Add item to cart /
+robot -d results Tests/add_to_cart_test.robot;  py upload_test_results.py
 
-TC4 - Register user
-robot -d results Tests/register_user_test.robot
+TC5 - Remove item from cart /
+robot -d results Tests/remove_from_cart_test.robot;  py upload_test_results.py
 
-TC5 - Login user
-robot -d results Tests/login_user_test.robot
+TC6 - Checkout item /
+robot -d results Tests/checkout_test.robot;  py upload_test_results.py
 
-TC6 - Checkout item
-robot -d results Tests/checkout_test.robot
+TC7 - Check order history /
+robot -d results Tests/order_history_test.robot;  py upload_test_results.py

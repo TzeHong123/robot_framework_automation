@@ -2,7 +2,8 @@
 Documentation       Test Case for User Login
 Library             SeleniumLibrary
 Resource  ../Resources/variables.robot
-Test Teardown    Close Browser
+Resource           ../Resources/keywords.robot
+Test Teardown    Run Keywords    Send Login Test Result with Status    AND    Close Browser
 
 *** Variables ***
 ${BROWSER}         chrome
@@ -22,5 +23,4 @@ User Login Test
     Sleep    1s
     Click Element    xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/button
     Wait Until Page Contains    My Account    5s
-    Capture Page Screenshot
-    Close Browser
+

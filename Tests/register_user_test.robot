@@ -1,20 +1,21 @@
 *** Settings ***
 Library    SeleniumLibrary
-Test Teardown    Close Browser
+Resource           ../Resources/keywords.robot
+Test Teardown    Run Keywords    Send Register Test Result with Status    AND    Close Browser
 
 *** Variables ***
 ${BROWSER}      chrome
 ${URL}          https://automationteststore.com/
 ${FIRST_NAME}   Ali
 ${LAST_NAME}    Hamdan
-${EMAIL}        ali.hamdan@example.com
+${EMAIL}        ali.hamdan1@example.com
 ${TELEPHONE}    0123456789
 ${ADDRESS}      123 Example Street
 ${CITY}         Seremban
 ${ZIP}          70000
 ${COUNTRY}      Malaysia
 ${REGION}       Negeri Sembilan
-${USERNAME}     ali_hamdan
+${USERNAME}     ali_hamdan1
 ${PASSWORD}     P@ssw0rd
 
 *** Test Cases ***
@@ -66,4 +67,3 @@ Register New User
     # Submit Form
     Click Element    xpath=/html/body/div/div[2]/div/div/div/div[1]/form/div[5]/div/div/button
     Wait Until Page Contains    Your Account Has Been Created!    10s
-    Close Browser

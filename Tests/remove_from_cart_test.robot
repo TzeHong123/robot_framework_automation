@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 Resource  ../Resources/variables.robot
 Resource  ../Resources/keywords.robot
-Test Teardown    Close Browser
+Test Teardown    Run Keywords    Send Remove From Cart Test Result with Status    AND    Close Browser
 
 *** Test Cases ***
 Remove Item from Cart
