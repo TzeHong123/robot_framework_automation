@@ -1,255 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-10T21:27:59.131484" rpa="false" schemaversion="5">
-<suite id="s1" name="Order History Test" source="C:\src\My project\Internship project\lazada-test-automation\Tests\order_history_test.robot">
-<test id="s1-t1" name="Order History Test" line="9">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-12T14:59:35.719997" rpa="false" schemaversion="5">
+<suite id="s1" name="Search Test" source="C:\src\My project\Internship project\lazada-test-automation\Tests\search_test.robot">
+<test id="s1-t1" name="Search Product on Automation Test Store" line="8">
 <kw name="Open Test Store Homepage" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:00.959715" level="INFO">Opening browser 'chrome' to base url 'https://automationteststore.com/'.</msg>
-<msg time="2025-03-10T21:28:01.634293" level="WARN">The chromedriver version (133.0.6943.141) detected in PATH at C:\Selenium driver\Chrome driver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.35); currently, chromedriver 134.0.6998.35 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-12T14:59:36.805869" level="INFO">Opening browser 'chrome' to base url 'https://automationteststore.com/'.</msg>
+<msg time="2025-05-12T14:59:37.309458" level="WARN">The chromedriver version (133.0.6943.141) detected in PATH at C:\Selenium driver\Chrome driver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.93); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-12T14:59:40.733759" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-12T14:59:40.734033" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 133
+Current browser version is 136.0.7103.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A6C6A5+28789]
+	(No symbol) [0x00007FF6739D5B20]
+	(No symbol) [0x00007FF673868F9A]
+	(No symbol) [0x00007FF6738ACE7B]
+	(No symbol) [0x00007FF6738ABEBB]
+	(No symbol) [0x00007FF6738A5FDB]
+	(No symbol) [0x00007FF6738A15AD]
+	(No symbol) [0x00007FF6738F555B]
+	(No symbol) [0x00007FF6738F4B30]
+	(No symbol) [0x00007FF6738E7103]
+	(No symbol) [0x00007FF6738AFFC0]
+	(No symbol) [0x00007FF6738B1273]
+	GetHandleVerifier [0x00007FF673DB1AED+3458237]
+	GetHandleVerifier [0x00007FF673DC829C+3550316]
+	GetHandleVerifier [0x00007FF673DBDB9D+3507565]
+	GetHandleVerifier [0x00007FF673B32C6A+841274]
+	(No symbol) [0x00007FF6739E09EF]
+	(No symbol) [0x00007FF6739DCB34]
+	(No symbol) [0x00007FF6739DCCD6]
+	(No symbol) [0x00007FF6739CC119]
+	BaseThreadInitThunk [0x00007FFB488FE8D7+23]
+	RtlUserThreadStart [0x00007FFB494B14FC+44]
+</msg>
 <arg>${TEST_STORE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-10T21:28:00.959361" elapsed="9.029948"/>
+<status status="FAIL" start="2025-05-12T14:59:36.805651" elapsed="3.933449">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 133
+Current browser version is 136.0.7103.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A6C6A5+28789]
+	(No symbol) [0x00007FF6739D5B20]
+	(No symbol) [0x00007FF673868F9A]
+	(No symbol) [0x00007FF6738ACE7B]
+	(No symbol) [0x00007FF6738ABEBB]
+	(No symbol) [0x00007FF6738A5FDB]
+	(No symbol) [0x00007FF6738A15AD]
+	(No symbol) [0x00007FF6738F555B]
+	(No symbol) [0x00007FF6738F4B30]
+	(No symbol) [0x00007FF6738E7103]
+	(No symbol) [0x00007FF6738AFFC0]
+	(No symbol) [0x00007FF6738B1273]
+	GetHandleVerifier [0x00007FF673DB1AED+3458237]
+	GetHandleVerifier [0x00007FF673DC829C+3550316]
+	GetHandleVerifier [0x00007FF673DBDB9D+3507565]
+	GetHandleVerifier [0x00007FF673B32C6A+841274]
+	(No symbol) [0x00007FF6739E09EF]
+	(No symbol) [0x00007FF6739DCB34]
+	(No symbol) [0x00007FF6739DCCD6]
+	(No symbol) [0x00007FF6739CC119]
+	BaseThreadInitThunk [0x00007FFB488FE8D7+23]
+	RtlUserThreadStart [0x00007FFB494B14FC+44]
+</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-10T21:28:09.989977" elapsed="0.063965"/>
+<status status="NOT RUN" start="2025-05-12T14:59:40.739305" elapsed="0.000030"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@id='filter_keyword']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-10T21:28:10.054728" elapsed="0.053974"/>
+<status status="NOT RUN" start="2025-05-12T14:59:40.739416" elapsed="0.000021"/>
 </kw>
-<status status="PASS" start="2025-03-10T21:28:00.958339" elapsed="9.150566"/>
+<status status="FAIL" start="2025-05-12T14:59:36.805002" elapsed="3.934551">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 133
+Current browser version is 136.0.7103.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A6C6A5+28789]
+	(No symbol) [0x00007FF6739D5B20]
+	(No symbol) [0x00007FF673868F9A]
+	(No symbol) [0x00007FF6738ACE7B]
+	(No symbol) [0x00007FF6738ABEBB]
+	(No symbol) [0x00007FF6738A5FDB]
+	(No symbol) [0x00007FF6738A15AD]
+	(No symbol) [0x00007FF6738F555B]
+	(No symbol) [0x00007FF6738F4B30]
+	(No symbol) [0x00007FF6738E7103]
+	(No symbol) [0x00007FF6738AFFC0]
+	(No symbol) [0x00007FF6738B1273]
+	GetHandleVerifier [0x00007FF673DB1AED+3458237]
+	GetHandleVerifier [0x00007FF673DC829C+3550316]
+	GetHandleVerifier [0x00007FF673DBDB9D+3507565]
+	GetHandleVerifier [0x00007FF673B32C6A+841274]
+	(No symbol) [0x00007FF6739E09EF]
+	(No symbol) [0x00007FF6739DCB34]
+	(No symbol) [0x00007FF6739DCCD6]
+	(No symbol) [0x00007FF6739CC119]
+	BaseThreadInitThunk [0x00007FFB488FE8D7+23]
+	RtlUserThreadStart [0x00007FFB494B14FC+44]
+</status>
 </kw>
-<kw name="Login User" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:10.110363" level="INFO">Clicking element 'xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/a'.</msg>
-<arg>xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:10.110073" elapsed="1.671537"/>
+<kw name="Search for a product" owner="keywords">
+<arg>shirt</arg>
+<status status="NOT RUN" start="2025-05-12T14:59:40.740137" elapsed="0.000069"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/div[1]/div</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-10T21:28:11.781904" elapsed="0.035097"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-10T21:28:13.817720" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-10T21:28:11.817273" elapsed="2.000704"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:13.818880" level="INFO">Typing text 'ali_hamdan' into text field 'xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/div[1]/div/input'.</msg>
-<arg>xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/div[1]/div/input</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:13.818355" elapsed="0.237237"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-10T21:28:15.056958" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-10T21:28:14.056011" elapsed="1.001298"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:15.058299" level="INFO">Typing text 'P@ssw0rd' into text field 'xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/div[2]/div/input'.</msg>
-<arg>xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/div[2]/div/input</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:15.057729" elapsed="0.206986"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-10T21:28:16.266039" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-10T21:28:15.265056" elapsed="1.001229"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:16.267150" level="INFO">Clicking element 'xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/button'.</msg>
-<arg>xpath=/html/body/div/div[2]/div/div/div/div/div[2]/div/form/fieldset/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:16.266679" elapsed="2.363939"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>My Account</arg>
-<arg>5s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-03-10T21:28:18.630845" elapsed="0.017716"/>
-</kw>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<status status="PASS" start="2025-03-10T21:28:10.109502" elapsed="8.539219"/>
-</kw>
-<kw name="Check Order History" owner="keywords">
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:18.649826" level="INFO">Simulating Mouse Over on element 'xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/a'.</msg>
-<arg>xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/a</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:18.649593" elapsed="0.290260"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/ul/li[6]/a</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-10T21:28:18.940173" elapsed="0.029459"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:18.970336" level="INFO">Clicking element 'xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/ul/li[6]/a'.</msg>
-<arg>xpath=/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li/ul/li[6]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:18.969965" elapsed="1.913725"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=/html/body/div/div[2]/div/div[1]/div/div/div[1]/div[3]/div/table/tbody/tr[1]/td[3]/button</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-10T21:28:20.884233" elapsed="0.034488"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:20.919441" level="INFO">Clicking element 'xpath=/html/body/div/div[2]/div/div[1]/div/div/div[1]/div[3]/div/table/tbody/tr[1]/td[3]/button'.</msg>
-<arg>xpath=/html/body/div/div[2]/div/div[1]/div/div/div[1]/div[3]/div/table/tbody/tr[1]/td[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-10T21:28:20.919060" elapsed="1.668443"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Order History</arg>
-<arg>10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.587850" elapsed="0.039641"/>
-</kw>
-<status status="PASS" start="2025-03-10T21:28:18.649237" elapsed="3.978612"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-03-10T21:28:22.761684" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.628739" elapsed="0.133154"/>
+<kw name="Verify Search Results" owner="keywords">
+<status status="NOT RUN" start="2025-05-12T14:59:40.740503" elapsed="0.000029"/>
 </kw>
 <kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
-<kw name="Send Check Order History Test Result with Status" owner="keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-10T21:28:22.764223" level="INFO">${test_name} = Order History Test</msg>
-<var>${test_name}</var>
-<arg>Order History Test</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.763992" elapsed="0.000282"/>
+<kw name="Send Search Test Result with Status" owner="keywords">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Verify Search Results" owner="keywords">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T14:59:40.741872" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-12T14:59:40.741958" level="FAIL">No browser is open.</msg>
+<arg>xpath=//*[@id="maincontainer"]/div/div/div/div/div[3]/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-05-12T14:59:40.741521" elapsed="0.003547">No browser is open.</status>
 </kw>
-<try>
-<branch type="TRY">
-<kw name="Verify Order History Page" owner="keywords">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Order History</arg>
-<arg>10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.765008" elapsed="0.018904"/>
+<status status="FAIL" start="2025-05-12T14:59:40.741355" elapsed="0.003876">No browser is open.</status>
 </kw>
-<doc>Verifies that the order history page is displayed successfully.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.764670" elapsed="0.019470"/>
+<msg time="2025-05-12T14:59:40.745326" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Verify Search Results</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-05-12T14:59:40.741232" elapsed="0.004119"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-10T21:28:22.784761" level="INFO">${test_status} = Passed</msg>
-<var>${test_status}</var>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-05-12T14:59:40.745606" level="INFO">${message} = Test failed unexpectedly</msg>
+<var>${message}</var>
+<arg>${status}</arg>
+<arg>Item searching completed successfully</arg>
+<arg>Test failed unexpectedly</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-05-12T14:59:40.745473" elapsed="0.000155"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-05-12T14:59:40.745818" level="INFO">${final_status} = Failed</msg>
+<var>${final_status}</var>
+<arg>${status}</arg>
 <arg>Passed</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.784403" elapsed="0.000403"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-10T21:28:22.785186" level="INFO">${test_message} = Order history displayed successfully</msg>
-<var>${test_message}</var>
-<arg>Order history displayed successfully</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.784976" elapsed="0.000286"/>
-</kw>
-<status status="PASS" start="2025-03-10T21:28:22.764479" elapsed="0.020919"/>
-</branch>
-<branch type="EXCEPT">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${test_status}</var>
 <arg>Failed</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-10T21:28:22.785854" elapsed="0.000046"/>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-05-12T14:59:40.745716" elapsed="0.000123"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${test_message}</var>
-<arg>Order history verification failed</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-10T21:28:22.786028" elapsed="0.000041"/>
-</kw>
-<status status="NOT RUN" start="2025-03-10T21:28:22.785619" elapsed="0.000506"/>
-</branch>
-<status status="PASS" start="2025-03-10T21:28:22.764399" elapsed="0.021808"/>
-</try>
 <kw name="Send Test Result" owner="keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-03-10T21:28:22.787635" level="INFO">${data} = {'test_name': 'Order History Test', 'status': 'Passed', 'message': 'Order history displayed successfully'}</msg>
+<msg time="2025-05-12T14:59:40.746495" level="INFO">${data} = {'test_name': 'Searching process', 'status': 'Failed', 'message': 'Test failed unexpectedly'}</msg>
 <var>${data}</var>
 <arg>test_name=${test_name}</arg>
 <arg>status=${status}</arg>
 <arg>message=${message}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.787028" elapsed="0.000657"/>
+<status status="PASS" start="2025-05-12T14:59:40.746202" elapsed="0.000317"/>
 </kw>
 <kw name="POST" owner="RequestsLibrary">
-<msg time="2025-03-10T21:28:22.849226" level="INFO">POST Request : url=http://kthcreation.com/robot_framework_automation/php/save_test_result.php 
- path_url=/robot_framework_automation/php/save_test_result.php 
- headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '106', 'Content-Type': 'application/json'} 
- body=b'{"test_name": "Order History Test", "status": "Passed", "message": "Order history displayed successfully"}' 
- </msg>
-<msg time="2025-03-10T21:28:22.849549" level="INFO">POST Response : url=http://kthcreation.com/robot_framework_automation/php/save_test_result.php 
- status=200, reason=OK 
- headers={'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'x-powered-by': 'PHP/7.4.33', 'content-type': 'text/html; charset=UTF-8', 'content-length': '72', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'date': 'Mon, 10 Mar 2025 13:28:23 GMT', 'server': 'LiteSpeed'} 
- body={"success":true,"message":"Test result saved successfully"} 
- </msg>
-<msg time="2025-03-10T21:28:22.849809" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-05-12T15:00:01.799478" level="INFO">${response} = None</msg>
+<msg time="2025-05-12T15:00:01.799630" level="FAIL">ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))</msg>
 <var>${response}</var>
 <arg>http://kthcreation.com/robot_framework_automation/php/save_test_result.php</arg>
 <arg>json=${data}</arg>
 <doc>Sends a POST request.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.787860" elapsed="0.061995"/>
+<status status="FAIL" start="2025-05-12T14:59:40.746602" elapsed="21.062693">ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-10T21:28:22.851471" level="INFO">Response: {"success":true,"message":"Test result saved successfully"}</msg>
+<msg time="2025-05-12T15:00:01.809904" level="FAIL">Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</msg>
 <arg>Response: ${response.content}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.850177" elapsed="0.001416"/>
+<status status="FAIL" start="2025-05-12T15:00:01.809480" elapsed="0.000457">Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</status>
 </kw>
-<arg>${test_name}</arg>
-<arg>${test_status}</arg>
-<arg>${test_message}</arg>
-<status status="PASS" start="2025-03-10T21:28:22.786424" elapsed="0.065328"/>
+<arg>Searching process</arg>
+<arg>${final_status}</arg>
+<arg>${message}</arg>
+<status status="FAIL" start="2025-05-12T14:59:40.745959" elapsed="21.064097">Several failures occurred:
+
+1) ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))
+
+2) Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</status>
 </kw>
-<doc>Sends the test result for the Order History Test case.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.763142" elapsed="0.088704"/>
+<doc>Sends test result as Passed or Failed depending on the test outcome.</doc>
+<status status="FAIL" start="2025-05-12T14:59:40.741036" elapsed="21.069114">Several failures occurred:
+
+1) ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))
+
+2) Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.852102" elapsed="2.441036"/>
+<status status="PASS" start="2025-05-12T15:00:01.810262" elapsed="0.000099"/>
 </kw>
-<arg>Send Check Order History Test Result with Status</arg>
+<arg>Send Search Test Result with Status</arg>
 <arg>AND</arg>
 <arg>Close Browser</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-03-10T21:28:22.762560" elapsed="2.530816"/>
+<status status="FAIL" start="2025-05-12T14:59:40.740845" elapsed="21.069598">Several failures occurred:
+
+1) ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))
+
+2) Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</status>
 </kw>
-<status status="PASS" start="2025-03-10T21:28:00.957358" elapsed="24.336571"/>
+<status status="FAIL" start="2025-05-12T14:59:36.804354" elapsed="25.006398">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 133
+Current browser version is 136.0.7103.93 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF673A6C6A5+28789]
+	(No symbol) [0x00007FF6739D5B20]
+	(No symbol) [0x00007FF673868F9A]
+	(No symbol) [0x00007FF6738ACE7B]
+	(No symbol) [0x00007FF6738ABEBB]
+	(No symbol) [0x00007FF6738A5FDB]
+	(No symbol) [0x00007FF6738A15AD]
+	(No symbol) [0x00007FF6738F555B]
+	(No symbol) [0x00007FF6738F4B30]
+	(No symbol) [0x00007FF6738E7103]
+	(No symbol) [0x00007FF6738AFFC0]
+	(No symbol) [0x00007FF6738B1273]
+	GetHandleVerifier [0x00007FF673DB1AED+3458237]
+	GetHandleVerifier [0x00007FF673DC829C+3550316]
+	GetHandleVerifier [0x00007FF673DBDB9D+3507565]
+	GetHandleVerifier [0x00007FF673B32C6A+841274]
+	(No symbol) [0x00007FF6739E09EF]
+	(No symbol) [0x00007FF6739DCB34]
+	(No symbol) [0x00007FF6739DCCD6]
+	(No symbol) [0x00007FF6739CC119]
+	BaseThreadInitThunk [0x00007FFB488FE8D7+23]
+	RtlUserThreadStart [0x00007FFB494B14FC+44]
+
+
+Also teardown failed:
+Several failures occurred:
+
+1) ConnectTimeout: HTTPConnectionPool(host='kthcreation.com', port=80): Max retries exceeded with url: /robot_framework_automation/php/save_test_result.php (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPConnection object at 0x0000018C3D964CD0&gt;, 'Connection to kthcreation.com timed out. (connect timeout=None)'))
+
+2) Resolving variable '${response.content}' failed: AttributeError: 'NoneType' object has no attribute 'content'</status>
 </test>
-<doc>Test Case for Checking Order History</doc>
-<status status="PASS" start="2025-03-10T21:27:59.134824" elapsed="26.161037"/>
+<status status="FAIL" start="2025-05-12T14:59:35.722267" elapsed="26.089935"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Order History Test" id="s1" pass="1" fail="0" skip="0">Order History Test</stat>
+<stat name="Search Test" id="s1" pass="0" fail="1" skip="0">Search Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-03-10T21:28:01.634293" level="WARN">The chromedriver version (133.0.6943.141) detected in PATH at C:\Selenium driver\Chrome driver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.35); currently, chromedriver 134.0.6998.35 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-12T14:59:37.309458" level="WARN">The chromedriver version (133.0.6943.141) detected in PATH at C:\Selenium driver\Chrome driver\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.93); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

@@ -6,16 +6,16 @@ Test Teardown    Run Keywords    Send Register Test Result with Status    AND   
 *** Variables ***
 ${BROWSER}      chrome
 ${URL}          https://automationteststore.com/
-${FIRST_NAME}   Ali
-${LAST_NAME}    Hamdan
-${EMAIL}        ali.hamdan1@example.com
+${FIRST_NAME}   Abu
+${LAST_NAME}    bin bakar
+${EMAIL}        abu123@example123.com
 ${TELEPHONE}    0123456789
 ${ADDRESS}      123 Example Street
 ${CITY}         Seremban
 ${ZIP}          70000
 ${COUNTRY}      Malaysia
 ${REGION}       Negeri Sembilan
-${USERNAME}     ali_hamdan1
+${USERNAME}     abu123
 ${PASSWORD}     P@ssw0rd
 
 *** Test Cases ***
