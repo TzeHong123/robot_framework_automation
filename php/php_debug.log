@@ -1,0 +1,117 @@
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => search_test
+        )
+
+)
+Response: Array
+(
+    [0] => Array
+        (
+            [test_name] => search_test
+            [status] => success
+            [message] => Test executed
+        )
+
+)
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => order_history_test
+        )
+
+)
+Response: Array
+(
+    [0] => Array
+        (
+            [test_name] => order_history_test
+            [status] => success
+            [message] => Test executed
+        )
+
+)
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => search_test
+        )
+
+)
+DB Connection Error: Access denied for user 'your_db_user'@'localhost' (using password: YES)Received: Array
+(
+    [tests] => Array
+        (
+            [0] => search_test
+        )
+
+)
+Inserted: Array
+(
+    [0] => Array
+        (
+            [test_name] => search_test
+            [status] => success
+            [message] => Test executed
+        )
+
+)
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => order_history_test
+        )
+
+)
+Inserted: Array
+(
+    [0] => Array
+        (
+            [test_name] => order_history_test
+            [status] => success
+            [message] => Test executed
+        )
+
+)
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => search_test
+        )
+
+)
+Running: robot --outputdir ../robot_tests/results ../robot_tests/search_test.robot 2>&1
+Output: Inserted: Array
+(
+    [0] => Array
+        (
+            [test_name] => search_test
+            [status] => success
+            [message] => Test executed
+        )
+
+)
+Received: Array
+(
+    [tests] => Array
+        (
+            [0] => search_test
+        )
+
+)
+Inserted: Array
+(
+    [0] => Array
+        (
+            [test_name] => search_test
+            [status] => error
+            [message] => Test file not found
+        )
+
+)
